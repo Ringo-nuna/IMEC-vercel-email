@@ -1,0 +1,8 @@
+{
+  "name": "imec-email-api",
+  "version": "1.0.0",
+  "description": "IMEC HR 이메일 발송 API (Vercel + Mailplug SMTP)",
+  "dependencies": {
+    "nodemailer": "^6.9.0"
+  }
+}
