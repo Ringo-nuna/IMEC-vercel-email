@@ -15,8 +15,8 @@ module.exports = async function handler(req, res) {
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,       // smtp.mailplug.co.kr
-    port: Number(process.env.SMTP_PORT) || 587,
-    secure: false,                      // STARTTLS (587)
+    port: Number(process.env.SMTP_PORT) || 465,
+    secure: true,                       // SSL (465)
     auth: {
       user: process.env.SMTP_USER,     // hr@imecs.co.kr
       pass: process.env.SMTP_PASS,     // 이메일 비밀번호
